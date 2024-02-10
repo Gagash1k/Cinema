@@ -3,42 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Movie catalog</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="header__logo">
-                    <img src="/img/film-reel (2) 1.png" alt="Logo">
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="header__logo">
+                       <a href="/index.html"> <img src="../img/film-reel (2) 1.png" alt="Logo"></a>
+                    </div>
+                    <nav class="header__nav row">
+                        <form class="header__search">
+                            <figure class="close__search"></figure>
+                            <input type="text" placeholder="Write the name of movie">
+                            <button>Search</button>
+                        </form>
+                        <button class="open__search"></button>
+                        <a href="/pages/library.html"><img src="../img/book 1.png" alt=""></a>
+                    </nav>
                 </div>
-                <nav class="header__nav row">
-                    <form class="header__search">
-                        <input type="text" placeholder="Write the name of movie">
-                        <button>Search</button>
-                    </form>
-                    <a href=""><img src="/img/book 1.png" alt=""></a>
-                </nav>
             </div>
-        </div>
-    </header>
-
-    <main>
-        <div class="container"></div>
-    </main>
+        </header>
+    
+        <main>
+            <div class="container">
+                <div class="movies">
+                    <h1>Searched movies: <span></span></h1>
+                    <div class="movies__list row">
+                    </div>
+                    <ul class="movie__pagination row">
+                    </ul>
+                </div>
+            </div>
+            <div class="modal">
+                <div class="modal__window">
+                    <button class="modal__close">x</button>
+                    <div class="modal__content">
+                        <div class="modal__content-spinner">
+                            <img src="../img/spinner.svg" alt="">
+                        </div>
+                    </div>
+                    <button class="modal__add">Add to library</button>
+                </div>
+            </div>
+        </main>
+    </div>
 
     <footer>
         <div class="container">
             <div class="row">
                 <p>developed by Gagash1k</p>
                 <div class="footer__links">
-                    <a href=""><img src="/img/telegram 1.png" alt="Telegram"></a>
-                    <a href=""><img src="/img/tiktok 1.png" alt="Tiktok"></a>
-                    <a href=""><img src="/img/whatsapp 1.png" alt="Whatsapp"></a>
+                    <a href=""><img src="../img/telegram 1.png" alt="Telegram"></a>
+                    <a href=""><img src="../img/tiktok 1.png" alt="Tiktok"></a>
+                    <a href=""><img src="../img/whatsapp 1.png" alt="Whatsapp"></a>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="/script.js"></script>
 </body>
 </html>
